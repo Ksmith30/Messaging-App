@@ -3,15 +3,17 @@ import { Platform } from 'react-native';
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
 
 import TabBarIcon from '../components/TabBarIcon';
-import HomeScreen from '../screens/HomeScreen';
-import LinksScreen from '../screens/LinksScreen';
-import SettingsScreen from '../screens/SettingsScreen';
+import PrayScreen from '../screens/PrayScreen';
+import ShareScreen from '../screens/ShareScreen';
+import FellowshipScreen from '../screens/FellowshipScreen';
+import GrowScreen from '../screens/GrowScreen';
+import GoScreen from '../screens/GoScreen';
 
-const HomeStack = createStackNavigator({
-  Home: HomeScreen,
+const PrayerStack = createStackNavigator({
+  Pray: PrayScreen,
 });
 
-HomeStack.navigationOptions = {
+PrayerStack.navigationOptions = {
   tabBarLabel: 'Pray',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
@@ -25,11 +27,11 @@ HomeStack.navigationOptions = {
   ),
 };
 
-const LinksStack = createStackNavigator({
-  Links: LinksScreen,
+const ShareStack = createStackNavigator({
+  Share: ShareScreen,
 });
 
-LinksStack.navigationOptions = {
+ShareStack.navigationOptions = {
   tabBarLabel: 'Share',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
@@ -39,11 +41,11 @@ LinksStack.navigationOptions = {
   ),
 };
 
-const SettingsStack = createStackNavigator({
-  Settings: SettingsScreen,
+const FellowshipStack = createStackNavigator({
+  Fellowship: FellowshipScreen,
 });
 
-SettingsStack.navigationOptions = {
+FellowshipStack.navigationOptions = {
   tabBarLabel: 'Fellowship',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
@@ -53,8 +55,26 @@ SettingsStack.navigationOptions = {
   ),
 };
 
+const GrowStack = createStackNavigator({
+  Grow: GrowScreen,
+});
+
+GrowStack.navigationOptions = {
+  tabBarLabel: 'Grow', 
+}
+
+const GoStack = createStackNavigator({
+  Go: GoScreen,
+});
+
+GoStack.navigationOptions = {
+  tabBarLabel: 'Go',
+}
+
 export default createBottomTabNavigator({
-  HomeStack,
-  LinksStack,
-  SettingsStack,
+  PrayerStack,
+  ShareStack,
+  FellowshipStack,
+  GrowStack,
+  GoScreen,
 });
