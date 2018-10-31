@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, ScrollView } from 'react-native';
-import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
+import Input from '../components/Input'
 
 export default class GrowScreen extends React.Component {
     static navigationOptions = {
@@ -13,7 +13,7 @@ export default class GrowScreen extends React.Component {
     render() {
       return (
         <ScrollView style={styles.container}>
-        
+            <Input/>
         </ScrollView>
       );
     }

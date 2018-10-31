@@ -1,5 +1,6 @@
 import React from 'react';
-import { ScrollView, StyleSheet } from 'react-native'
+import { ScrollView, StyleSheet } from 'react-native';
+import Input from '../components/Input';
 
 export default class GoScreen extends React.Component {
   static navigationOptions = {
@@ -12,7 +13,7 @@ export default class GoScreen extends React.Component {
   render() {
     return (
       <ScrollView style={styles.container}>
-      
+        <Input/>
       </ScrollView>
     );
   }
