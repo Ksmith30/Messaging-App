@@ -20,8 +20,8 @@ PrayerStack.navigationOptions = {
       focused={focused}
       name={
         Platform.OS === 'ios'
-          ? `ios-information-circle${focused ? '' : '-outline'}`
-          : 'md-information-circle'
+          ? `ios-disc${focused ? '' : '-outline'}`
+          : 'md-disc'
       }
     />
   ),
@@ -36,7 +36,7 @@ ShareStack.navigationOptions = {
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={Platform.OS === 'ios' ? `ios-link${focused ? '' : '-outline'}` : 'md-link'}
+      name={Platform.OS === 'ios' ? `ios-disc${focused ? '' : '-outline'}` : 'md-disc'}
     />
   ),
 };
@@ -50,7 +50,7 @@ FellowshipStack.navigationOptions = {
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={Platform.OS === 'ios' ? `ios-options${focused ? '' : '-outline'}` : 'md-options'}
+      name={Platform.OS === 'ios' ? `ios-disc${focused ? '' : '-outline'}` : 'md-disc'}
     />
   ),
 };
@@ -61,6 +61,12 @@ const GrowStack = createStackNavigator({
 
 GrowStack.navigationOptions = {
   tabBarLabel: 'Grow', 
+  tabBarIcon: ({ focused }) => (
+    <TabBarIcon
+      focused={focused}
+      name={Platform.OS === 'ios' ? `ios-disc${focused ? '' : '-outline'}` : 'md-disc'}
+    />
+  ),
 }
 
 const GoStack = createStackNavigator({
@@ -69,6 +75,12 @@ const GoStack = createStackNavigator({
 
 GoStack.navigationOptions = {
   tabBarLabel: 'Go',
+  tabBarIcon: ({ focused }) => (
+    <TabBarIcon
+      focused={focused}
+      name={Platform.OS === 'ios' ? `ios-disc${focused ? '' : '-outline'}` : 'md-disc'}
+    />
+  ),
 }
 
 export default createBottomTabNavigator({
@@ -76,5 +88,5 @@ export default createBottomTabNavigator({
   ShareStack,
   FellowshipStack,
   GrowStack,
-  GoScreen,
+  GoStack,
 });

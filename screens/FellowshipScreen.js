@@ -4,6 +4,9 @@ import { ScrollView, StyleSheet } from 'react-native'
 export default class FellowshipScreen extends React.Component {
   static navigationOptions = {
     title: 'Fellowship',
+    headerStyle: {
+      backgroundColor: 'beige',
+    },
   };
 
   render() {

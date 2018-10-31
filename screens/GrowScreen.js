@@ -5,6 +5,9 @@ import { createStackNavigator, createBottomTabNavigator } from 'react-navigation
 export default class GrowScreen extends React.Component {
     static navigationOptions = {
       title: 'Grow',
+      headerStyle: {
+          backgroundColor: '#7fffd4',
+      },
     };
   
     render() {

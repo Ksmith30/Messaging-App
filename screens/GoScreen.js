@@ -4,6 +4,9 @@ import { ScrollView, StyleSheet } from 'react-native'
 export default class GoScreen extends React.Component {
   static navigationOptions = {
     title: 'Go',
+    headerStyle: {
+        backgroundColor: '#6495ED',
+    }
   };
 
   render() {
