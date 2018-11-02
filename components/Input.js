@@ -17,5 +17,6 @@ const styles = StyleSheet.create({
         height: 40,
         borderColor: 'grey',
         borderWidth: 1,
+        alignContent: 'flex-end',
     },
 });

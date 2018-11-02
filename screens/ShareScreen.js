@@ -1,6 +1,5 @@
 import React from 'react';
-import { ScrollView, StyleSheet } from 'react-native';
-import Input from '../components/Input';
+import MessagingScreen from '../components/MessagingScreen';
 
 export default class ShareScreen extends React.Component {
   static navigationOptions = {
@@ -12,17 +11,7 @@ export default class ShareScreen extends React.Component {
 
   render() {
     return (
-      <ScrollView style={styles.container}>
-        <Input/>
-      </ScrollView>
+      <MessagingScreen/>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingTop: 15,
-    backgroundColor: '#fff',
-  },
-});
