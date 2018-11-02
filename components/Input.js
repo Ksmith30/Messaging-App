@@ -8,6 +8,7 @@ export default class Input extends React.Component {
                 style = {styles.textInputStyle}
                 placeholder='Reply'
                 placeholderTextColor='black'
+                underlineColorAndroid='transparent'
             />
         );
     }
