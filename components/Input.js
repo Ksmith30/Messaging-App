@@ -7,6 +7,7 @@ export default class Input extends React.Component {
             <TextInput
                 style = {styles.textInputStyle}
                 placeholder='Reply'
+                placeholderTextColor='black'
             />
         );
     }
@@ -18,5 +19,10 @@ const styles = StyleSheet.create({
         borderColor: 'grey',
         borderWidth: 1,
         alignContent: 'flex-end',
+        paddingStart: 10,
+        shadowColor: 'black',
+        shadowOpacity: 0.5,
+        shadowOffset:{ width: 0, height: 1 },
+        shadowRadius: 5,
     },
 });
