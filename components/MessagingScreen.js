@@ -2,6 +2,7 @@ import React from 'react';
 import { View, ScrollView, StyleSheet } from 'react-native';
 import { GiftedChat } from 'react-native-gifted-chat'
 import Input from './Input';
+import { StackNavigator } from '../navigation/StackNavigator';
 
 export default class MessagingScreen extends React.Component {
     state = {
@@ -43,6 +44,7 @@ export default class MessagingScreen extends React.Component {
                         _id: 1,
                     }}
                 />
+                <StackNavigator />
             </View>
         );
     };
