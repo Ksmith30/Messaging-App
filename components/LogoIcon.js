@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { View, StyleSheet, TextInput, Dimensions } from 'react-native';
 
-export default class LogoIcon extends React.Component {
+export default class LogoIcon extends Component {
 
   render() {
     return(

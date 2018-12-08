@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import MessagingScreen from '../components/MessagingScreen';
 
-export default class FellowshipScreen extends React.Component {
+export default class FellowshipScreen extends Component {
   static navigationOptions = {
     title: 'Fellowship',
     headerStyle: {

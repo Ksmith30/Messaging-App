@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import MessagingScreen from '../components/MessagingScreen';
 import InfoButton from '../components/InfoButton';
 
-export default class PrayScreen extends React.Component {
+export default class PrayScreen extends Component {
   static navigationOptions = {
     headerStyle: {
       backgroundColor: 'salmon',

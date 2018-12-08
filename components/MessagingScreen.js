@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { View, ScrollView, StyleSheet } from 'react-native';
 import { GiftedChat } from 'react-native-gifted-chat'
 import Input from './Input';
