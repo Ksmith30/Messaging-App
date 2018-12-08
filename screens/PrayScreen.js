@@ -7,7 +7,8 @@ export default class PrayScreen extends Component {
     headerStyle: {
       backgroundColor: 'salmon',
     },
-    headerRight: <InfoButton
+    headerRight:
+    <InfoButton
       onPress= {() => this.props.navigation.navigate('Pray')}
     ></InfoButton>,
     title: 'Pray',
