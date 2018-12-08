@@ -4,5 +4,4 @@ import StackNavigator from './StackNavigator';
 
 export default createSwitchNavigator({
     Main: MainTabNavigator,
-    Stack: StackNavigator,
 });

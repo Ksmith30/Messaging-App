@@ -25,12 +25,12 @@ export default class MessagingScreen extends React.Component {
           ],
         })
       }
-    
+
       onSend(messages = []) {
         this.setState(previousState => ({
           messages: GiftedChat.append(previousState.messages, messages),
         }))
-      }    
+      }
 
     render() {
         return (
@@ -44,7 +44,6 @@ export default class MessagingScreen extends React.Component {
                         _id: 1,
                     }}
                 />
-                <StackNavigator />
             </View>
         );
     };

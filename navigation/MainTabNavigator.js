@@ -1,4 +1,4 @@
-import React from 'react';
+import { React } from 'react';
 import { Platform } from 'react-native';
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
 
@@ -60,7 +60,7 @@ const GrowStack = createStackNavigator({
 });
 
 GrowStack.navigationOptions = {
-  tabBarLabel: 'Grow', 
+  tabBarLabel: 'Grow',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
